@@ -1,5 +1,6 @@
 import { Provider } from "react-redux";
 import CounterContextProvider from "../context/counterContext";
+import NewContentProvider from "../context/counterContext2";
 import CounterContextProviderComp from "../context/counterContext2";
 import { store } from "../redux/store";
 import ReduxToolkitComp from "./component/redux_toolkit";
@@ -18,9 +19,10 @@ export default function App() {
         {/* <UseReducerHook /> */}
         {/* <Provider store={store}><ReduxToolkitComp /></Provider> */}
         {/* <CounterContextProvider><ContextComp /></CounterContextProvider> */}
-        <CounterContextProviderComp>
+
+        <NewContentProvider>
           <ContextComp2 />
-        </CounterContextProviderComp>
+        </NewContentProvider>
       </main>
     </div>
   );

@@ -1,22 +1,22 @@
 import { createContext, useState } from "react";
 
-export const CounterContext2 = createContext();
+export const newContext = createContext();
 
-const CounterContextProviderComp = ({ children }) => {
+const NewContentProvider = ({ children }) => {
   const [counter, setCounter] = useState(0);
 
-  const handleClick = (value) => {
+  const handleCounter = (value) => {
     setCounter((prev) => {
       if (value === "increment") return prev + 1;
       if (prev < 1) return prev;
       return prev - 1;
     });
   };
+
   return (
-    <CounterContext2.Provider value={{ counter, handleClick }}>
+    <newContext.Provider value={{ counter, handleCounter }}>
       {children}
-    </CounterContext2.Provider>
+    </newContext.Provider>
   );
 };
-
-export default CounterContextProviderComp;
+export default NewContentProvider;
