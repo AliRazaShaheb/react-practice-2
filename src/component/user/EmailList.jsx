@@ -17,7 +17,7 @@ const EmailList = () => {
   const renderUser = user
     .filter((item) => {
       // console.log( item.name.indexOf(term))
-      return item.email.indexOf(term) >= 0;
+      return item.email.toLowerCase().indexOf(term.toLowerCase()) >= 0;
     })
     .map((user, idx) => {
       return <div key={idx}>{user.email}</div>;

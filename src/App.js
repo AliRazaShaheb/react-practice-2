@@ -6,7 +6,6 @@ import { store } from "../redux/store";
 import { navBarData } from "./component/navbar/data";
 import Navbar from "./component/navbar/Navbar";
 import ReduxToolkitComp from "./component/redux_toolkit";
-import CommentList from "./component/user/CommentList";
 import EmailList from "./component/user/EmailList";
 import NewUserList from "./component/user/UserList";
 import UserList from "./component/user/UserList";
