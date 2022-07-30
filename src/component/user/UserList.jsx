@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import UserHOC from "./DataHOC";
+import userHOC from "./DataHOC";
 
 const OldUserList = ({ data }) => {
   return (
@@ -10,5 +10,5 @@ const OldUserList = ({ data }) => {
     </>
   );
 };
-const UserList = UserHOC(OldUserList, "name");
+const UserList = userHOC(OldUserList, "name");
 export default UserList;

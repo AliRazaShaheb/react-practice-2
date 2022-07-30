@@ -1,37 +1,14 @@
 import { useEffect, useState } from "react";
+import userHOC from "./DataHOC";
 
-const baseURL = "https://jsonplaceholder.typicode.com/posts/1/comments";
-const EmailList = () => {
-  const [user, setUser] = useState([]);
-  const [term, setTerm] = useState("");
-  useEffect(() => {
-    fetchUserList();
-  }, []);
-
-  const fetchUserList = async () => {
-    const res = await fetch(baseURL);
-    const json = await res.json();
-    setUser(json);
-  };
-
-  const renderUser = user
-    .filter((item) => {
-      // console.log( item.name.indexOf(term))
-      return item.email.toLowerCase().indexOf(term.toLowerCase()) >= 0;
-    })
-    .map((user, idx) => {
-      return <div key={idx}>{user.email}</div>;
-    });
+const OldEmailList = ({ data }) => {
   return (
-    <div>
-      <input
-        type="text"
-        value={term}
-        onChange={(e) => setTerm(e.target.value)}
-      />
-      {renderUser}
-    </div>
+    <>
+      {data.map((user, idx) => {
+        return <div key={idx}>{user.email}</div>;
+      })}
+    </>
   );
 };
-
+const EmailList = userHOC(OldEmailList, "email");
 export default EmailList;
