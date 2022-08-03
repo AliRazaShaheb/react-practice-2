@@ -5,6 +5,8 @@ import CounterContextProviderComp from "../context/counterContext2";
 import { store } from "../redux/store";
 import { navBarData } from "./component/navbar/data";
 import Navbar from "./component/navbar/Navbar";
+import PaginationComp from "./component/pagination";
+import Parent from "./component/parent_child/Parent";
 import ReduxToolkitComp from "./component/redux_toolkit";
 import EmailList from "./component/user/EmailList";
 import NewUserList from "./component/user/UserList";
@@ -30,10 +32,12 @@ export default function App() {
         </NewContentProvider> */}
       </main>
       {/* <Navbar data={navBarData} /> */}
-      <div style={divStyle}>
+      {/* <div style={divStyle}>
         <UserList />
         <EmailList />
-      </div>
+      </div> */}
+      {/* <PaginationComp /> */}
+      <Parent />
     </div>
   );
 }
