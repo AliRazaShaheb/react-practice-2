@@ -1,13 +1,16 @@
+import React from "react";
 import { Provider } from "react-redux";
 import CounterContextProvider from "../context/counterContext";
 import NewContentProvider from "../context/counterContext2";
 import CounterContextProviderComp from "../context/counterContext2";
 import { store } from "../redux/store";
+import FilterComp from "./component/filterData/FilterComponent";
 import { navBarData } from "./component/navbar/data";
 import Navbar from "./component/navbar/Navbar";
 import PaginationComp from "./component/pagination";
 import Parent from "./component/parent_child/Parent";
 import ReduxToolkitComp from "./component/redux_toolkit";
+import TodoApp from "./component/todo/todoApp";
 import EmailList from "./component/user/EmailList";
 import NewUserList from "./component/user/UserList";
 import UserList from "./component/user/UserList";
@@ -30,6 +33,8 @@ export default function App() {
         {/* <NewContentProvider>
           <ContextComp2 />
         </NewContentProvider> */}
+        {/* <FilterComp /> */}
+        <TodoApp />
       </main>
       {/* <Navbar data={navBarData} /> */}
       {/* <div style={divStyle}>
@@ -37,7 +42,7 @@ export default function App() {
         <EmailList />
       </div> */}
       {/* <PaginationComp /> */}
-      <Parent />
+      {/* <Parent /> */}
     </div>
   );
 }
