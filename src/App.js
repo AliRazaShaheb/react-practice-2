@@ -4,12 +4,14 @@ import CounterContextProvider from "../context/counterContext";
 import NewContentProvider from "../context/counterContext2";
 import CounterContextProviderComp from "../context/counterContext2";
 import { store } from "../redux/store";
+import Colorchanger from "./component/colorchanger";
 import FilterComp from "./component/filterData/FilterComponent";
 import { navBarData } from "./component/navbar/data";
 import Navbar from "./component/navbar/Navbar";
 import PaginationComp from "./component/pagination";
 import Parent from "./component/parent_child/Parent";
 import ReduxToolkitComp from "./component/redux_toolkit";
+import TicTacToe from "./component/ticTacToe";
 import TodoApp from "./component/todo/todoApp";
 import EmailList from "./component/user/EmailList";
 import NewUserList from "./component/user/UserList";
@@ -34,7 +36,12 @@ export default function App() {
           <ContextComp2 />
         </NewContentProvider> */}
         {/* <FilterComp /> */}
-        <TodoApp />
+        {/* <TodoApp /> */}
+
+        {/* TODO tictactoe */}
+        {/* <TicTacToe /> */}
+
+        <Colorchanger />
       </main>
       {/* <Navbar data={navBarData} /> */}
       {/* <div style={divStyle}>
