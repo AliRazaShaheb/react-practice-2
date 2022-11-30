@@ -11,6 +11,7 @@ import Navbar from "./component/navbar/Navbar";
 import PaginationComp from "./component/pagination";
 import Parent from "./component/parent_child/Parent";
 import ReduxToolkitComp from "./component/redux_toolkit";
+import SliderComp from "./component/slider";
 import TicTacToe from "./component/ticTacToe";
 import TodoApp from "./component/todo/todoApp";
 import EmailList from "./component/user/EmailList";
@@ -41,7 +42,8 @@ export default function App() {
         {/* TODO tictactoe */}
         {/* <TicTacToe /> */}
 
-        <Colorchanger />
+        {/* <Colorchanger /> */}
+        <SliderComp />
       </main>
       {/* <Navbar data={navBarData} /> */}
       {/* <div style={divStyle}>

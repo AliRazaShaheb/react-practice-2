@@ -1,0 +1,49 @@
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.arrow {
+  cursor: pointer;
+}
+
+.slider {
+  width: 20rem;
+  height: 10rem;
+  background-color: rebeccapurple;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.image-container {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s;
+}
+.slider img {
+  width: 20rem;
+  object-fit: cover;
+}
+
+.bottom {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.bg {
+  background-color: white;
+}
