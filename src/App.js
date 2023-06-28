@@ -10,6 +10,7 @@ import { navBarData } from "./component/navbar/data";
 import Navbar from "./component/navbar/Navbar";
 import PaginationComp from "./component/pagination";
 import Parent from "./component/parent_child/Parent";
+import PasswordGenerator from "./component/passwordGenerator";
 import ReduxToolkitComp from "./component/redux_toolkit";
 import SliderComp from "./component/slider";
 import TicTacToe from "./component/ticTacToe";
@@ -43,7 +44,8 @@ export default function App() {
         {/* <TicTacToe /> */}
 
         {/* <Colorchanger /> */}
-        <SliderComp />
+        {/* <SliderComp /> */}
+        <PasswordGenerator />
       </main>
       {/* <Navbar data={navBarData} /> */}
       {/* <div style={divStyle}>
