@@ -12,6 +12,7 @@ import PaginationComp from "./component/pagination";
 import Parent from "./component/parent_child/Parent";
 import PasswordGenerator from "./component/passwordGenerator";
 import ReduxToolkitComp from "./component/redux_toolkit";
+import SideBarComp from "./component/sidebar";
 import SliderComp from "./component/slider";
 import TicTacToe from "./component/ticTacToe";
 import TodoApp from "./component/todo/todoApp";
@@ -23,6 +24,7 @@ import ContextComp2 from "./component/use_context2";
 import UseReducerHook from "./component/use_reducer";
 import UseStateHook from "./component/use_state";
 import "./styles.css";
+import MoveLeftRight from "./component/moveItemLeftRight/moveItemLeftRight";
 
 export default function App() {
   return (
@@ -45,7 +47,9 @@ export default function App() {
 
         {/* <Colorchanger /> */}
         {/* <SliderComp /> */}
-        <PasswordGenerator />
+        {/* <PasswordGenerator /> */}
+        {/* <SideBarComp /> */}
+        <MoveLeftRight />
       </main>
       {/* <Navbar data={navBarData} /> */}
       {/* <div style={divStyle}>
